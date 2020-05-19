@@ -1,0 +1,54 @@
+<link rel="stylesheet" type="text/css" href="<?php echo $block->getViewFileUrl('Dn_Testimonial::css/styles.css')?>">
+<?php
+$testimonial = $block->getCollection();
+$testimonialData = $testimonial->getData();
+?>
+<div class="widget block block-static-block testemonials-widget">
+    <div class="block-title"><strong>Depoimentos</strong></div>
+    <ul class="testemonials-list">
+        <?php foreach ($testimonialData as $testimonialItem) : ?>
+            <li class="testemonial">
+                <div class="testemonial-content">
+                    <div class="image">
+                        <img src="<?php echo $this->getAvatarUrl($testimonialItem['avatar']); ?>" width="100" height="100" />
+                    </div>
+
+                    <div class="content">
+                        <?php if ($testimonialItem['name']) : ?>
+                            <h3 class="name"><?= $testimonialItem['name']; ?></h3>
+                        <?php endif; ?>
+
+                        <div class="description">
+                            <?php if ($testimonialItem['content']) : ?>
+                                <p class="text"><?= $testimonialItem['content']; ?></p>
+                            <?php endif; ?>
+                        </div>
+
+                        <?php if ($testimonialItem['testimonial_date']) : ?>
+                            <?php
+                            $date = $testimonialItem['testimonial_date'];
+                            $dateFormat = $this->timezone->date(new \DateTime($date))->format('d/m/Y');
+                            ?>
+                            <p class="date"><?= $dateFormat ?></p>
+                        <?php endif; ?>
+
+                    </div>
+                   
+                </div>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+
+        <!-- <li class="depoimento">
+            <div class="depoimento-wrapper">
+                <div class="depoimento-content"><img src="http://graph.facebook.com/1469495280/picture?width=100&amp;height=100" width="100" height="100" />
+                    <div class="depoimento-info">
+                        <h3>Danilo Nobre</h3>
+                        <p>Produto entregue antes do prazo e em excelente estado, fiquei muito satisfeito, a miss&atilde;o agora &eacute; escolher a pr&oacute;xima compra.</p>
+                        <span class="data">21/09/2018</span>
+                    </div>
+                    <a class="rede-social" href="https://www.facebook.com/lojatoys4fun/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </li> -->
+</div>

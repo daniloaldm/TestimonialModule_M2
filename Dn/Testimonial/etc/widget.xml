@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Dn\Testimonial\Block\Testimonial" id="dn_testimonial">
+        <label>Depoimentos</label>
+        <description>Depoimentos dos clientes</description>
+        <parameters>
+
+            <parameter name="template" xsi:type="select" visible="true">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="default" value="widget/testimonial.phtml" selected="true">
+                        <label translate="true">Default</label>
+                    </option>
+                </options>
+            </parameter>
+
+        </parameters>
+
+        <containers>
+            <container name="content.top">
+                <template name="default" value="default" />
+            </container>
+            <container name="content">
+                <template name="default" value="default" />
+            </container>
+            <container name="content.bottom">
+                <template name="default" value="default" />
+            </container>
+            <container name="page.bottom">
+                <template name="default" value="default" />
+            </container>
+            <container name="sidebar.additional">
+                <template name="default" value="default" />
+            </container>
+            <container name="before.body.end">
+                <template name="popup" value="popup" />
+            </container>
+        </containers>
+
+    </widget>
+</widgets>

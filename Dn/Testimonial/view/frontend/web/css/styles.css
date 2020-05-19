@@ -1,0 +1,56 @@
+.testemonials-list {
+    display   : flex;
+    list-style: none;
+    margin    : 0 -20px;
+    padding   : 0;
+}
+
+.testemonial {
+    display      : flex;
+    margin-bottom: 0;
+    padding      : 0 20px;
+    box-sizing   : border-box;
+}
+
+.testemonial-content {
+    border-radius: 8px;
+    border       : 1px solid #D8D8D8;
+    display      : flex;
+    padding      : 30px;
+    width        : 100%;
+}
+
+.image {
+    flex-shrink: 0;
+    height     : 80px;
+    width      : 80px;
+}
+
+.content {
+    margin-left: 20px;
+    width      : 100%;
+}
+
+.name {
+    color        : #000;
+    font-size    : 16px;
+    font-weight  : 600;
+    margin       : 0;
+    margin-bottom: 15px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.text {
+    color    : #000;
+    font-size: 14px;
+}
+
+.date {
+    color     : #777;
+    font-size : 12px;
+    text-align: right;
+    width     : 100%;
+}

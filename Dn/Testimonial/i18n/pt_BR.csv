@@ -1,0 +1,29 @@
+"Save and Continue Edit","Save and Continue Edit"
+Delete,Delete
+"Edit %1","Edit %1"
+"New Item","Novo Item"
+"Testimonial Information","Testimonial Information"
+Testimonial,Depoimentos
+Name,Name
+Information,Informação
+Avatar,Avatar
+Status,Status
+Enabled,Enabled
+Disabled,Disabled
+Content,Content
+"Add Item","Adicionar"
+"You deleted the item ""%1"".","You deleted the item ""%1""."
+"This item no longer exists.","This item no longer exists."
+"You saved the item.","Salvo com Sucesso!"
+"Please select item(s).","Please select item(s)."
+"Total of %1 record(s) were successfully deleted.","Total of %1 record(s) were successfully deleted."
+"Total of %1 record(s) were successfully updated.","Total of %1 record(s) were successfully updated."
+"There are no testimonials matching the selection.","There are no testimonials matching the selection."
+from,from
+"Are you sure you want to delete?","Are you sure you want to delete?"
+"Change Status","Mudar Status"
+ID,ID
+Action,Action
+Edit,Edit
+Title,Title
+Filename,Filename
